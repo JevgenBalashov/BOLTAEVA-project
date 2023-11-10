@@ -1,0 +1,49 @@
+.Header {
+    background: url(../../assets/header-1-img.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+    min-height: 600px;
+}
+
+.HeaderContainer {
+    box-sizing: border-box;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.HeaderNavBar {
+    padding-top: 32px;
+    padding-bottom: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.HeaderBurger {
+    width: 22px;
+}
+
+.MenuList {
+    background-color: rgb(238, 228, 218);
+    border-top: 1px solid rgba(238, 228, 218, 0.363);
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.125rem;
+}
+
+.MenuListItem {
+    font-family: "Satoshi 400";
+    color: rgba(85, 85, 85, 1);
+    font-size: 24px;
+    line-height: 110%;
+    letter-spacing: -0.72px;
+}
+
+.MenuListItem:hover {
+    color: rgba(172, 143, 120, 1);
+}

@@ -1,0 +1,205 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+:root {
+    /* separator */
+    --separator-line: rgba(0, 0, 0, 0.1);
+    /* background */
+    --gray-primary: rgba(240, 240, 240, 1);
+    --gray-secondary: rgba(242, 240, 241, 1);
+    --red-background-discount: rgba(255, 51, 51, 0.1);
+    --black--background: rgba(0, 0, 0, 1);
+    /* text */
+    --red-text: rgba(255, 51, 51, 1);
+    --black-text: rgba(0, 0, 0, 1);
+    --white-text: rgba(255, 255, 255, 1);
+    --gray-text-primary: rgba(0, 0, 0, 0.6);
+    --gray-text-secondary: rgba(0, 0, 0, 0.4);
+    --login-btn:rgba(219,68,68,100);
+
+    /* svg */
+    --yellow-star: #ffc633;
+    --green-check: #01ab31;
+}
+/* fonts */
+
+/* ---Integral CF */
+/* Bold */
+@font-face {
+    font-family: "Integral-CF 700";
+    font-style: normal;
+    font-weight: normal;
+    src:
+        local("IntegralCF-Bold"),
+        url("./assets/fonts/IntegralCF/IntegralCF-Bold.woff") format("woff");
+}
+
+/* ---Satoshi */
+/* Regular */
+@font-face {
+    font-family: "Satoshi 400";
+    font-style: normal;
+    font-weight: normal;
+    src:
+        local("Satoshi-Regular"),
+        url("./assets/fonts/Satoshi/Satoshi-Regular.woff") format("woff");
+}
+
+/* Medium */
+@font-face {
+    font-family: "Satoshi 500";
+    font-style: normal;
+    font-weight: normal;
+    src:
+        local("Satoshi-Medium"),
+        url("./assets/fonts/Satoshi/Satoshi-Medium.woff") format("woff");
+}
+
+/* Bold */
+@font-face {
+    font-family: "Satoshi 700";
+    font-style: normal;
+    font-weight: normal;
+
+    src:
+        local("Satoshi-Bold"),
+        url("./assets/fonts/Satoshi/Satoshi-Bold.woff") format("woff");
+}
+
+/* Максимальная ширина контента */
+.section {
+    box-sizing: border-box;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
