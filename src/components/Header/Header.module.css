@@ -1,9 +1,13 @@
 .Header {
-    background: url(../../assets/header-1-img.png);
+    /* width: 1440px; */
+    margin: 0 auto;
     background-repeat: no-repeat;
     object-fit: cover;
-    background-position: center;
+    background-position: center center;
+    background-size: cover;
     min-height: 600px;
+    transition: background-image 1s ease-in-out;
+    position: relative;
 }
 
 .HeaderContainer {
@@ -28,12 +32,24 @@
 
 .MenuList {
     background-color: rgb(238, 228, 218);
-    border-top: 1px solid rgba(238, 228, 218, 0.363);
+    border-top: 1px solid var(--separator-line);
+    box-sizing: border-box;
     padding: 40px 0px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     gap: 2.125rem;
+    position: absolute;
+    z-index: 10;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.MenuOpen {
+    background-color: rgb(238, 228, 218);
+
 }
 
 .MenuListItem {
@@ -46,4 +62,145 @@
 
 .MenuListItem:hover {
     color: rgba(172, 143, 120, 1);
+}
+
+.HeaderTitleBox {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 195px;
+    padding: 0px 20px;
+    min-width: 290px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.HeaderTitle {
+    color: rgba(255, 255, 255, 1);
+    font-family: "Satoshi 400";
+    font-size: 36px;
+    line-height: 120%;
+    letter-spacing: -1.44px;
+    border-bottom: 2px solid rgb(255, 255, 255, 0.3) ;
+}
+
+
+.ImageIndicator {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(230, 230, 230, 0.5);
+    padding: 3px 10px;
+    border-radius: 50px;
+  }
+  
+  .Dot {
+    width: 8px;
+    height: 8px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .ActiveDot {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .Arrow {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 8px;
+    background-color: rgba(230, 230, 230, 0.5);
+    border-radius: 50px;
+  }
+
+  .arrowImg {
+    width: 13px;
+  }
+
+  .BigMenuItem {
+    display: none;
+  }
+
+  .SVGbox {
+    display: none;
+  }
+
+@media only screen and (min-width: 766px) {
+    .HeaderTitle {
+        font-size: 48px;
+    }
+    .HeaderTitleBox {
+        padding: 0 50px;
+    }
+    .Arrow {
+        padding: 3px 15px;
+        background-color: rgba(230, 230, 230, 0.5);
+        border-radius: 50px;
+    }
+    .HeaderContainer {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .HeaderBurger {
+        display: none;
+    }
+    .HeaderCart {
+        display: none;
+    }
+    .BigMenuItem {
+        display: block;
+        display: flex;
+        gap: 47px;
+    }
+    .BigItem {
+        color: #fff;
+        font-family: "Satoshi 400";
+        font-size: 14px;
+        font-style: normal;
+        line-height: 120%;
+        letter-spacing: -0.28px;
+    }
+    .SVGbox {
+        display: block;
+        display: flex;
+        gap: 47px;
+        align-items: center;
+    }
+    .SVGitem {
+        display: flex;
+        flex-direction: row;
+        width: 92px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .Header {
+        max-height: 900px;
+    }
+    .HeaderTitleBox {
+        padding: 0 70px;
+    }
+    .HeaderContainer {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
 }
