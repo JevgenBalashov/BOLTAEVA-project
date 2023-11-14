@@ -71,8 +71,8 @@ const Header = () => {
                         <span className={styles.BigItem}>Contacts</span>
                         <div className={styles.SVGitem}>
                             <img src={searchIconWhite} alt="searchIcon" />
-                            <img src={cartsvg} alt="cartsvg" />
                             <img src={AccountWhite} alt="AccountWhite" />
+                            <img src={cartsvg} alt="cartsvg" />
                         </div>
                     </div>
                 </div>
