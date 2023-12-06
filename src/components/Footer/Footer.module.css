@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 30px;
   background-color: rgba(238, 228, 218);
 }
 .FooterContainer{
@@ -14,19 +15,222 @@
   justify-content: center;
   align-items: center;
   border-bottom: 2px solid var(--separator-line);
+  margin-bottom: 30px;
 }
-.FooterMainContetnt {
-  
+.CompanyTxtInfo {
+  text-align: left;
+  font-family: "Satoshi 400";
+}
+.FooterTitle {
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.4px;
+  color: #555;
+  font-family: "Satoshi 400";
+  margin-bottom: 26px;
+  display: none;
+}
+.FooterTXTbox {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  opacity: 0.4;
+  font-style: normal;
+  line-height: 160%;
+  letter-spacing: -0.28px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-family: "Satoshi 400";
+  max-width: 342px;
+}
+.FooterSocialBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 345px;
+  margin: 0 auto;
+}
+.SocialBtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 45px;
+  border-radius: 66px;
+  background: #F5ECE3;
+  backdrop-filter: blur(7px);
+  border: none;
+  transition: 0.3s ease all;
+}
+.SocialBtn:hover {
+  background: #d0a67e;
+  transform: scale(0.95);
+}
+.SocialBtn:active {
+  transform: scale(1.1);
+  transition: 0.1s ease all;
+}
+.SecondButton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 30px;
+  border-radius: 66px;
+  background: #F5ECE3;
+  backdrop-filter: blur(7px);
+
+}
+.SocialBtn span {
+  font-family: "Satoshi 400";
+  color: #555;
+  font-size: 15px;
+  line-height: 120%;
+  letter-spacing: -0.32px;
+}
+.FooterSocialMedia {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 11px;
+  margin: 0 auto;
+  width: 265px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.Footersvgsocial {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5ECE3;
+  border-radius: 40px;
+  box-sizing: border-box;
+  transition: border 0.4s ease; 
+}
+.Footersvgsocial:hover {
+  cursor: pointer;
+  border: 2px solid rgb(172, 143, 115, 0.5)
+}
+
+.FooterAuthorcontainer {
+  text-align: center;
+  line-height: 160%;
+  letter-spacing: -0.28px;
+  color: #555;
+  opacity: 0.2;
+  font-family: "Satoshi 400";
+  font-size: 14px;
+}
+.FooterListBox {
+  text-align: left;
+  width: 140px;
+}
+.FooterListBox ul {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  color: rgba(85, 85, 85, 1);
+  opacity: 0.5;
+  line-height: 160%; /* 22.4px */
+  letter-spacing: -0.14px;
+  font-family: "Satoshi 400";
+  display: none;
+  height: 300px;
+}
+.listItem {
+  margin-bottom: 25px;
+  transition: 0.3s all ease;
+}
+.listItem:hover {
+  color: rgb(54, 54, 54);
+  opacity: 0.3;
+}
+.listItem:first-child {
+  margin-top: 42px;
+}
+.listItem:last-child {
+  margin-bottom: 0px;
+}
+.SocialLink {
+  display: none;
 }
 
 @media only screen and (min-width: 766px) {
-
+  .FooterListBox ul{
+    display: block;
+  }
+  .FooterTitle{
+    display: block;
+  }
+  .FooterMainContetnt {
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .FooterTXTbox {
+    text-align: left;
+    margin: 0;
+  }
+  .FooterSocialBtn {
+    display: none;
+  }
+  .SocialLink {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 25px;
+  }
+  .Link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .Link span {
+    color: #555;
+    font-family: "Satoshi 400";
+    font-size: 12px;
+  }
+  .FooterAuthorcontainer {
+    display: none;
+  }
+  .Footer {
+    padding-bottom: 100px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
-
+  .FooterMainContetnt {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .Footer {
+    padding-bottom: 120px;
+  }
+  .FooterListBox ul {
+    gap: 25px;
+  }
+  .FooterTXTbox {
+    text-align: left;
+  }
+  .SocialLink {
+    flex-direction: row;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-
+  .Footer {
+    padding-bottom: 140px;
+  }
+  .FooterTXTbox {
+    text-align: left;
+  }
+  .Link span {
+    font-size: 16px;
+  }
+  .FooterMainContetnt {
+    column-gap: 100px;
+  }
 }

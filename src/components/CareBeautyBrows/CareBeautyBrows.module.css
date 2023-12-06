@@ -1,0 +1,16 @@
+.MainSection {
+    width: 100%;
+    background-color: rgba(245, 236, 227, 1);
+}
+.mainSecrionContent {
+    box-sizing: border-box;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

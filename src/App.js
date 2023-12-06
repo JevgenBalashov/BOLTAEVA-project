@@ -3,16 +3,16 @@ import { Routes, Route } from "react-router-dom";
 import CartPage from "./pages/CartPage/CartPage";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import MainSection from "./pages/MainPage/MainPage";
 import NoPage from "./pages/NoPage/NoPage";
 import Login from "./pages/Login/Login";
+import MainPage from "./pages/MainPage/MainPage";
 
 const App = () => {
     return (
         <>
             <Header />
             <Routes>
-                <Route path="/" element={<MainSection />} />
+                <Route path="/" element={<MainPage />} />
                 <Route path="/cart" element={<CartPage />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/footer" element={<Footer />} />
