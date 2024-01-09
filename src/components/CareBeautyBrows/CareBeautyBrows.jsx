@@ -9,15 +9,17 @@ function CareBeatuBrows() {
         <section className={styles.MainSection}>
             <div className={styles.mainSecrionContent}>
                 <div className={styles.sliderBox}>
-                    <div className={styles.CareSlide}>
-                        <img className={styles.img} src={CareIMG} alt="CareIMG" />
-                    </div>
+                    <img className={styles.img} src={CareIMG} alt="CareIMG" />
+                    <span className={styles.SlideTitle}>Care</span>
                 </div>
                 <div className={styles.sliderBox}>
                     <img className={styles.img} src={BeautyIMG} alt="BeautyIMG" />
+                    <span className={styles.SlideTitle}>Beauty</span>
+
                 </div>
                 <div className={styles.sliderBox}>
                     <img className={styles.img} src={BrowsIMG} alt="BrowsIMG" />
+                    <span className={styles.SlideTitle}>Brows</span>
                 </div>
             </div>
         </section>
